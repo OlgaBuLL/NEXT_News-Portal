@@ -1,0 +1,33 @@
+@import "../../styles/main"
+
+.advertisement
+    grid-area: advertisement
+    max-width: 264px
+    display: flex
+    flex-direction: column
+    gap: 12px
+    background: $white-color
+    border-radius: 12px
+    padding: 12px
+    &__link
+        & a
+            color: $dark-color
+            font-size: 12px
+            &:hover
+                color: $accent-color
+        & span
+            color: #848484
+            font-size: 10px
+            margin-left: 4px
+
+    &__picture
+        max-height: 276px
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(19, 19, 19, 0.42)
+        color: $black-color
+        font-size: 28px
+        font-weight: 500
+        border-radius: inherit

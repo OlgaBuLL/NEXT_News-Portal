@@ -1,0 +1,33 @@
+@import "../../styles/main"
+
+.incidents
+    grid-area: incidents
+    &__title
+        display: flex
+        align-items: center
+        gap: 4px
+        color: $dark-color
+        margin-bottom: 16px
+        padding: 0 32px
+    &__container
+        display: flex
+        flex-wrap: wrap
+        gap: 12px
+
+.incident
+    max-width: 264px
+    height: fit-content
+    background: $white-color
+    border-radius: 12px
+    padding: 0 0 12px
+    &__info
+        display: grid
+        padding: 8px 12px 12px
+    &__date
+        color: #848484
+        font-size: 12px
+    &__title
+        color: #333
+        font-size: 16px
+        font-weight: 500
+        margin: 8px 0 16px

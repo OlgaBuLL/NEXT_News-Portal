@@ -1,0 +1,51 @@
+@import "../../styles/main"
+
+.more-news
+    grid-area: more-news
+    height: fit-content
+    background: $white-color
+    border-radius: 12px
+    padding: 32px
+    &__title
+        display: flex
+        align-items: center
+        gap: 4px
+        color: $dark-color
+        margin-bottom: 24px
+    &__container
+        display: flex
+        flex-wrap: wrap
+        gap: 16px
+    &__item
+        max-width: 245px
+        height: 151px
+        display: grid
+        background: $light-color
+        border-radius: 12px
+        padding: 12px 16px
+        &_title
+            color: #333
+            font-size: 16px
+            font-weight: 500
+    &__time
+        display: flex
+        align-items: center
+        gap: 8px
+        & #category
+            @include category
+        & #date
+            color: #474747
+            font-size: 12px
+
+.rating
+    display: flex
+    gap: 8px
+    &__item
+        display: flex
+        align-items: center
+        gap: 2px
+        & .emoji
+            width: 14px
+            height: 14px
+        & span
+            font-size: 14px

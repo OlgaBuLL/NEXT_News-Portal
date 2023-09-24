@@ -1,0 +1,59 @@
+@import "../../styles/main"
+
+.feed
+    grid-area: feed
+    display: flex
+    flex-direction: column
+    gap: 24px
+    background: $white-color
+    border-radius: 12px
+    &__container
+        display: flex
+        flex-direction: column
+        gap: 12px
+.news
+    display: flex
+    flex-direction: column
+    gap: 24px
+    padding: 32px 32px 0 32px
+
+.news-item
+    display: flex
+    gap: 8px
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 7px
+    &__time
+        display: flex
+        align-items: center
+        gap: 4px
+        & #time
+            color: #838383
+            font-size: 14px
+        & #category
+            @include category
+
+.breaking-news
+    display: flex
+    align-items: center
+    gap: 20px
+    background: $dark-color
+    padding: 8px 0px
+    border-radius: 0 0 12px 12px
+    overflow: hidden
+    &__item
+        position: relative
+        display: flex
+        align-items: center
+        gap: 20px
+        color: $white-color
+        font-size: 16px
+        white-space: nowrap
+        animation: move 3s infinite linear
+
+@keyframes move
+    0%
+        left: 10px
+    100%
+        left: -50%
