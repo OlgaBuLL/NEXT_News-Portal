@@ -4,7 +4,7 @@ import "../src/styles/main.sass";
 
 // components
 import Header from "@/src/components/Header/Header";
-import Aside from "@/src/components/Aside/Aside";
+import Navbar from "@/src/components/Navbar/Navbar";
 import Footer from "@/src/components/Footer/Footer";
 
 const roboto = Roboto({ subsets: ["cyrillic"], weight: ["400", "500"] });
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <div id="app">
           <Header />
           <div className="content container">
-            <Aside />
+            <Navbar />
             {children}
           </div>
           <Footer />

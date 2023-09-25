@@ -1,11 +1,11 @@
 import Link from "next/link";
 import "./style.sass";
 
-export default function Aside() {
+export default function Navbar() {
   return (
-    <aside className="aside">
+    <nav className="nav">
       {/* Лента */}
-      <div className="aside__item active">
+      <Link href="/" className="nav__item active">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -13,6 +13,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Лента</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -20,10 +21,11 @@ export default function Aside() {
             fill="#FF6B00"
           />
         </svg>
-        <Link href="/">Лента</Link>
-      </div>
+        <span>Лента</span>
+      </Link>
+
       {/* Происшествия */}
-      <div className="aside__item">
+      <Link href="/incidents" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -31,15 +33,17 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Происшествия</title>
           <path
             d="M13.7461 17.8305C13.8551 18.9779 14.0373 19.8321 14.292 20.3929C14.5462 20.9534 15.002 21.2347 15.6579 21.2347C15.7809 21.2347 15.8914 21.2141 16.0009 21.193C16.1113 21.2141 16.2204 21.2347 16.3431 21.2347C16.998 21.2347 17.4529 20.9534 17.7089 20.3929C17.9627 19.8321 18.1453 18.9779 18.2539 17.8305L18.8364 8.97262C18.9455 7.24596 19 6.00642 19 5.2549C19 4.23118 18.7363 3.43247 18.2098 2.86012C17.681 2.28732 16.9863 2 16.1253 2C16.0802 2 16.0455 2.01054 16.0018 2.01237C15.9581 2.01054 15.9229 2 15.8783 2C15.0164 2 14.3226 2.28686 13.7943 2.86012C13.2669 3.43292 13.0032 4.23164 13.0032 5.25536C13.0032 6.00733 13.0582 7.24642 13.1668 8.97308L13.7488 17.8305M16.0185 24.4695C15.185 24.4695 14.4732 24.7385 13.8835 25.2732C13.2948 25.8112 13 26.461 13 27.2244C13 28.0896 13.298 28.7664 13.893 29.2586C14.4899 29.7516 15.185 30 15.9779 30C16.7866 30 17.4912 29.7553 18.0939 29.2691C18.6966 28.782 18.9955 28.1006 18.9955 27.224C18.9955 26.4605 18.707 25.8107 18.1313 25.2728C17.5561 24.7385 16.8515 24.4695 16.0167 24.4695"
             fill="#262626"
           />
         </svg>
-        <Link href="/incidents">Происшествия</Link>
-      </div>
+        <span>Происшествия</span>
+      </Link>
+
       {/* Авто */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -47,6 +51,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Авто</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -54,10 +59,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Авто</Link>
-      </div>
+        <span>Авто</span>
+      </Link>
+
       {/* Бизнес */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -65,6 +71,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Бизнес</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -72,10 +79,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Бизнес</Link>
-      </div>
+        <span>Бизнес</span>
+      </Link>
+
       {/* Здоровье */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -83,6 +91,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Здоровье</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -90,10 +99,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Здоровье</Link>
-      </div>
+        <span>Здоровье</span>
+      </Link>
+
       {/* Крипто */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -101,6 +111,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Крипто</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -108,10 +119,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Крипто</Link>
-      </div>
+        <span>Крипто</span>
+      </Link>
+
       {/* Недвижимость */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -119,6 +131,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Недвижимость</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -126,10 +139,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Недвижимость</Link>
-      </div>
+        <span>Недвижимость</span>
+      </Link>
+
       {/* Образование */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -137,6 +151,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Образование</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -144,10 +159,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Образование</Link>
-      </div>
+        <span>Образование</span>
+      </Link>
+
       {/* Политика */}
-      <div className="aside__item">
+      <Link href="/politics" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -155,6 +171,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Политика</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -162,10 +179,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="/politics">Политика</Link>
-      </div>
+        <span>Политика</span>
+      </Link>
+
       {/* Туризм */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -173,6 +191,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Туризм</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -180,10 +199,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Туризм</Link>
-      </div>
+        <span>Туризм</span>
+      </Link>
+
       {/* Шоу-бизнес */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -191,15 +211,17 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Шоу-бизнес</title>
           <path
             d="M15.2199 6.54569C15.2839 6.38416 15.3921 6.24611 15.5309 6.14897C15.6698 6.05184 15.833 6 16 6C16.167 6 16.3302 6.05184 16.4691 6.14897C16.6079 6.24611 16.7161 6.38416 16.7801 6.54569L19.0445 12.2448C19.0695 12.3084 19.1107 12.3635 19.1636 12.4042C19.2165 12.4448 19.2791 12.4694 19.3445 12.4752L25.2221 12.9688C25.3884 12.9826 25.5472 13.0476 25.6782 13.1558C25.8093 13.2639 25.9068 13.4103 25.9585 13.5764C26.0102 13.7425 26.0137 13.921 25.9685 14.0892C25.9234 14.2574 25.8317 14.4078 25.705 14.5215L21.2261 18.5363C21.1765 18.5811 21.1397 18.6392 21.1195 18.7043C21.0994 18.7695 21.0967 18.8392 21.1118 18.9058L22.479 24.9116C22.5176 25.0814 22.5072 25.2594 22.4493 25.4231C22.3914 25.5868 22.2885 25.7288 22.1536 25.8314C22.0187 25.9339 21.8578 25.9923 21.6912 25.9993C21.5246 26.0063 21.3598 25.9614 21.2175 25.8705L16.1857 22.6544C16.1298 22.6187 16.0655 22.5999 16 22.5999C15.9345 22.5999 15.8702 22.6187 15.8143 22.6544L10.7825 25.8705C10.6402 25.9614 10.4754 26.0063 10.3088 25.9993C10.1422 25.9923 9.98135 25.9339 9.84644 25.8314C9.71152 25.7288 9.60862 25.5868 9.5507 25.4231C9.49279 25.2594 9.48244 25.0814 9.52098 24.9116L10.8882 18.9058C10.9033 18.8392 10.9006 18.7695 10.8805 18.7043C10.8603 18.6392 10.8235 18.5811 10.7739 18.5363L6.29504 14.5215C6.16831 14.4078 6.07658 14.2574 6.03146 14.0892C5.98633 13.921 5.98982 13.7425 6.04149 13.5764C6.09316 13.4103 6.19069 13.2639 6.32176 13.1558C6.45283 13.0476 6.61157 12.9826 6.77793 12.9688L12.6541 12.4752C12.7195 12.4698 12.7823 12.4455 12.8355 12.4052C12.8887 12.3648 12.9302 12.3098 12.9555 12.2463L15.2199 6.54718V6.54569Z"
             fill="#262626"
           />
         </svg>
-        <Link href="#">Шоу-бизнес</Link>
-      </div>
+        <span>Шоу-бизнес</span>
+      </Link>
+
       {/* Спорт */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -207,6 +229,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Спорт</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -214,10 +237,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Спорт</Link>
-      </div>
+        <span>Спорт</span>
+      </Link>
+
       {/* Стиль */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -225,6 +249,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Стиль</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -232,10 +257,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Стиль</Link>
-      </div>
+        <span>Стиль</span>
+      </Link>
+
       {/* Наука и технологии */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -243,6 +269,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Наука и технологии</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -250,10 +277,11 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Наука и технологии</Link>
-      </div>
+        <span>Наука и технологии</span>
+      </Link>
+
       {/* Экономика */}
-      <div className="aside__item">
+      <Link href="#" className="nav__item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -261,6 +289,7 @@ export default function Aside() {
           viewBox="0 0 32 32"
           fill="none"
         >
+          <title>Экономика</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -268,8 +297,8 @@ export default function Aside() {
             fill="#262626"
           />
         </svg>
-        <Link href="#">Экономика</Link>
-      </div>
-    </aside>
+        <span>Экономика</span>
+      </Link>
+    </nav>
   );
 }

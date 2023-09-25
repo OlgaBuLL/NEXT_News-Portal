@@ -1,7 +1,7 @@
 
 @import "../../styles/main"
 
-.aside
+.nav
     max-width: 264px
     display: flex
     flex-direction: column
@@ -11,24 +11,19 @@
         display: flex
         align-items: center
         gap: 12px
+        color: $dark-color
         border-radius: 12px
         padding: 12px 20px
-        & a
-            color: $dark-color
-            &:hover
-                color: $accent-color
         &:hover
-            transform: translateY(-4px)
             background: $white-color
+            color: $accent-color
+            transform: translateY(-4px)
         &:active
             background: $dark-color
-            & svg
-                & path
-                    fill: $accent-color
-            & a
-                color: $white-color
+            color: $white-color
+            & svg path
+                fill: $accent-color
 
-.aside__item.active
+.nav__item.active
+    color: $white-color
     background: $dark-color
-    & a
-        color: $white-color
